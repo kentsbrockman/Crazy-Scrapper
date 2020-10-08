@@ -19,6 +19,13 @@
 #end
 
 
+#Tests on a local html file
+  #page = Nokogiri::HTML(open("test.html"))   
+  #puts page.class   # => Nokogiri::HTML::Document
+  #puts page.css("title")[0].text   # => My webpage
+#end
+
+
 #Initialize constants that will serve to build hash
   CRYPTO_INDEX = []
   CRYPTO_PRICE = []

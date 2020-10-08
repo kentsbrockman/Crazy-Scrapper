@@ -1,0 +1,1 @@
+require_relative '../lib/deputy_scrapper'
