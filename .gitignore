@@ -1,2 +1,4 @@
 .env
-lib/
+test.html
+crypto_scrapper_with_test.rb
+
