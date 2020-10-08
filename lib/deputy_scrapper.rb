@@ -57,7 +57,7 @@ def hash_build
   i = 0
 
   while i < 577
-    compiled_data = {"first_name": FIRST_NAMES[i], "last_name": LAST_NAMES[i], "email": EMAILS[i]}
+    compiled_data = "first_name => #{FIRST_NAMES[i]}\nlast_name => #{LAST_NAMES[i]}\nemail => #{EMAILS[i]}"
     puts compiled_data
     i = i + 1
   end
