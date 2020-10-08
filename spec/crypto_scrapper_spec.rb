@@ -1,5 +1,6 @@
 require_relative '../lib/crypto_scrapper'
 
+
 describe "#extraction_indexes" do
 
   it "opens the chosen URL into a page object" do
@@ -27,7 +28,6 @@ describe "#extraction_indexes" do
 
 
 end
-
 
 
 describe "#extraction_values" do
