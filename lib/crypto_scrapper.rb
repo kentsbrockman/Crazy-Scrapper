@@ -1,29 +1,20 @@
 #Stack of gems
-  #require 'rubygems' => Je vois pas en quoi c'est indispensable...
   require 'nokogiri'
   require 'open-uri'
   require 'rest-client'
   require 'xpath'
-#end
-
 
 #Extraction via 'rest-client'
   #page = Nokogiri::HTML(RestClient.get("http://en.wikipedia.org/"))   
   #puts page.class   # => Nokogiri::HTML::Document
-#end
-
 
 #Extraction via 'open-uri'
   #page = Nokogiri::HTML(URI.open("http://en.wikipedia.org/"))   
   #puts page.class   # => Nokogiri::HTML::Document
-#end
-
 
 #Initialize constants that will serve to build hash
   CRYPTO_INDEX = []
   CRYPTO_PRICE = []
-#end
-
 
 def extraction_indexes
   page = Nokogiri::HTML(RestClient.get("https://coinmarketcap.com/all/views/all/"))   
@@ -31,7 +22,7 @@ def extraction_indexes
   #Stock the index text into a constant
   all_crypto_indexes.each do |crypto|
     CRYPTO_INDEX << crypto.text
-    end
+  end
 end
 
 

@@ -4,8 +4,6 @@
   require 'rest-client'
   require 'xpath'
   require 'pry'
-#end
-
 
 #Initialize constants that will serve to iterate on extractions of mails and build the final hash
   RAW_LIST_OF_DEPUTIES = []
@@ -13,8 +11,6 @@
   LAST_NAMES = []
   DEPUTY_PAGERS = []
   EMAILS = []
-#end
-
 
 def extraction_deputy_list
   page = Nokogiri::HTML(RestClient.get("http://www2.assemblee-nationale.fr/deputes/liste/alphabetique"))   
@@ -57,7 +53,7 @@ def hash_build
   i = 0
 
   while i < 577
-    compiled_data = "first_name => #{FIRST_NAMES[i]}\nlast_name => #{LAST_NAMES[i]}\nemail => #{EMAILS[i]}"
+    compiled_data = {"first_name => #{FIRST_NAMES[i]}\nlast_name => #{LAST_NAMES[i]}\nemail => #{EMAILS[i]}"}
     puts compiled_data
     i = i + 1
   end
