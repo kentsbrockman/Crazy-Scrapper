@@ -30,7 +30,7 @@ In fact, there are 3 different scrappers in this repository, all using pretty mu
 
 ## Author
 
-Quentin Plaud : https://github.com/kentsbrockman
+[Quentin Plaud](https://github.com/kentsbrockman)
 
 ---
 
